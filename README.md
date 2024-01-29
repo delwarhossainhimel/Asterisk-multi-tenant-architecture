@@ -1,4 +1,5 @@
-# Asterisk-multi-tenant-architecture
+# Asterisk-multi-tenant-architecture 
+# Asterisk 18.17.0
 Creating a working platform to manage multiple SIP number for different companies for cloud PBX system
 
 exten => _X.,1,Set(Var_TO=${CUT(CUT(SIP_HEADER(To),@,1),:,2)})
