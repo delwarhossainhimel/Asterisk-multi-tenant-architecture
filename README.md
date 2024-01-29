@@ -1,6 +1,6 @@
 # Asterisk-multi-tenant-architecture 
 # Asterisk 18.17.0
-Creating a working platform to manage multiple SIP number for different companies for cloud PBX system
+Creating a working platform to manage multiple SIP number for different companies in cloud PBX system
 
 exten => _X.,1,Set(Var_TO=${CUT(CUT(SIP_HEADER(To),@,1),:,2)})
 exten => _X.,1: This part defines the extension pattern. The _X. is a wildcard pattern that matches any digit (_X) followed by any number of digits (.). The 1 is the priority of the extension, meaning it is the first step to be executed.
